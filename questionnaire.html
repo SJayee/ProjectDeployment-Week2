@@ -12,12 +12,11 @@
     <fieldset>
     <p style="font-size:130%;> <b>Participants Information</b></p>
 <p style="font-size:115%;color:gold;background-color:black> <b>Input Participant Information</b></p>
-<form action="/action_page.php" target="self" method="post" autocomplete="on" novalidate>
+<form target="self" method="post" autocomplete="on" novalidate>
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" autofocus><br>
     <label for="sname">Surname:</label><br>
     <input type="text" id="sname" name="sname"><br>
-   
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email"><br>
     <label for="tel">Telephone No.</label><br>
@@ -36,7 +35,7 @@
 
   <p style="font-size:115%;color:gold;background-color:black"><b>Which Of These Products Do You Personally Use?</b></p>
   <p style=font-family:serif;><strong>Note: Totes & Tees Hub does not yet offer some of the services listed here.</strong></p>
-  <form action="/action_page.php">
+  <form>
     <input type="checkbox" id="product1" name="product1" vaue="Totebag">
     <label for="product1">Totebag</label><br>
     <input type="checkbox" id="product2" name="product2" value="Shirt(Polo)">
@@ -63,7 +62,7 @@
 
   <p style="font-size:115%;color:gold;background-color:black"><b>Which Of The Products We Offer Do You Use?</b></p>
   <p style=font-family:serif;>Select the option(s) which apply to you.<br><br> <strong>Note: You do not have to have ordered them from us.</strong></p>
-  <form action="/action_page.php">
+  <form>
     <input type="checkbox" id="product1" name="product1" value="Totebag">
     <label for="product1">Totebag</label><br>
     <input type="checkbox" id="product2" name="product2" value="Shirt(Polo)">
@@ -82,7 +81,8 @@
     <label for="product10">Drawstring Totebag</label><br>
     <input type="checkbox" id="product11" name="product11" value="Mini Totebag">
     <label for="product11">Mini Totebag</label><br>
-
+    </form>
+    
     <h3 style="font-size:180%;background-color:gold">Are You One Of Our Customers?</h3>
     <form>
         <input type="radio" id="option1" name="option1" value="Yes">
@@ -105,7 +105,7 @@
 
     <p style="font-size:115%;color:gold;background-color:black"><b>Which Of These These Products Have You Ordered Fom Us Before?</b></p>
     <p style=font-family:serif;>Select the option(s) which apply to you.</p>
-    <form action="/action_page.php">
+    <form>
       <input type="checkbox" id="product1" name="product1" value="Totebag">
       <label for="product1">Totebag</label><br>
       <input type="checkbox" id="product2" name="product2" value="Shirt(Polo)">
@@ -124,11 +124,12 @@
       <label for="product10">Drawstring Totebag</label><br>
       <input type="checkbox" id="product11" name="product11" value="Mini Totebag">
       <label for="product11">Mini Totebag</label><br>
-  <br><br>
+    <br><br>
+    </form>
 
   <p style="font-size:115%;color:gold;background-color:black"><b>How Much Do Yo Like Totes & Tees Hub?</b></p> 
   <p>Please leave an honest review of how much you like Totes & Tees on a general scale. This includes not only the products and services that we provide, but also the overall look and presentation of out brand.</p> 
-  <form action="/action_page.php"
+  <form
   oninput="x.value=parseInt(a.value)+parseInt(b.value)">
   0
   <input type="range"  id="a" name="a" value="10" min="0" max="50">10 
@@ -137,7 +138,7 @@
 </form>
 
   <p style="font-size:115%;color:gold;background-color:black"><b>Anything You Would Like To Tell Us?</b></p> 
-   <form action="/action_page.php">
+   <form>
     <p>Leave behind any thoughts or sugesstions that you might have for Totes & Tees Hub.<br>These could include products that you would like to see from us or even products or services of ours that you think could improve.</p>
     <textarea name="message" style="width:400px; height:200px;" placeholder="Text In Here."></textarea>
     <br><br>
@@ -147,14 +148,14 @@
 <br>
 <p> <b>~</b>Please select the date on which you completed and submitted this questionnaire.</p>
 
-<form action="/action_page.php">
+<form>
   <label for="date">Submssion date:</label>
   <input type="date" id="date" name="Submssion date">
 </form>
 </fieldset>
 <br>
 
-      <form action="/action_page.php">
+      <form>
       <input type="submit" value="Submit Response">
       <input type="reset" value="Reset Questionnaire">
     </form>
